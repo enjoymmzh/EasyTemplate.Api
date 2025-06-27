@@ -1,0 +1,63 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <ContainerRepository>ShareManagementApiImage</ContainerRepository>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\resource\ads_script\bottom.js" />
+    <Content Remove="wwwroot\resource\ads_script\double.js" />
+    <Content Remove="wwwroot\resource\ads_script\large.js" />
+    <Content Remove="wwwroot\resource\ads_script\mini.js" />
+    <Content Remove="wwwroot\resource\ads_script\popup.js" />
+    <Content Remove="wwwroot\resource\ads_script\rightpopup.js" />
+    <Content Remove="wwwroot\resource\ads_script\top.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\resource\ads_script\bottom.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\resource\ads_script\double.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\resource\ads_script\large.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\resource\ads_script\mini.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\resource\ads_script\popup.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\resource\ads_script\rightpopup.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\resource\ads_script\top.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="8.0.6" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.6" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EasyTemplate.Service\EasyTemplate.Service.csproj" />
+    <ProjectReference Include="..\EasyTemplate.Tool\EasyTemplate.Tool.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Logs\ReadMe.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

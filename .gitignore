@@ -1,0 +1,12 @@
+/.vs
+# Build and Release Folders
+bin-debug/
+bin-release/
+[Oo]bj/
+[Bb]in/
+/EasyTemplate.Schedule/obj
+/EasyTemplate.Schedule/bin
+/EasyTemplate.Service/bin
+/EasyTemplate.Service/obj
+/EasyTemplate.Tool/bin
+/EasyTemplate.Tool/obj
