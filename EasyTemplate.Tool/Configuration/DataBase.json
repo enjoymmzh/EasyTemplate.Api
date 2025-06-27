@@ -11,7 +11,7 @@
         "configId": "0", //默认库标识-禁止修改
         "dbType": "MySql", //MySql、SqlServer、Sqlite、Oracle、PostgreSQL、Dm、Kdbndp、Oscar、MySqlConnector、Access、OpenGauss、QuestDB、HG、ClickHouse、GBase、Odbc、Custom
         //"ConnectionString": "Data Source=192.168.205.21;Port=3306;Initial Catalog=multi_user_system;Persist Security Info=True;User ID=root;Password=123456;Pooling=True;charset=utf8mb4;MAX Pool Size=100;Min Pool Size=1;Connection Lifetime=30;", // 库连接字符串
-        "connectionString": "Data Source=localhost;Port=3306;Initial Catalog=ShareManagement;Persist Security Info=True;User ID=root;Password=123456;Pooling=True;charset=utf8mb4;MAX Pool Size=100;Min Pool Size=1;Connection Lifetime=30;AllowLoadLocalInfile=true;", // 库连接字符串
+        "connectionString": "Data Source=localhost;Port=3306;Initial Catalog=test;Persist Security Info=True;User ID=root;Password=123456;Pooling=True;charset=utf8mb4;MAX Pool Size=100;Min Pool Size=1;Connection Lifetime=30;AllowLoadLocalInfile=true;", // 库连接字符串
         "dbSettings": {
           "enableDiffLog": true, //启用库表差异日志
           "enableInitDb": false, //启用库初始化
